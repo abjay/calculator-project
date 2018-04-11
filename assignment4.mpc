@@ -1,0 +1,36 @@
+
+project (assignment4) {
+  specific (make) {
+    requires += cpp11
+    compile_flags += -std=c++11
+  }
+  exename = assignment4
+  install = .
+ 
+  Source_Files {
+	Add_Expr_Node.cpp
+	Binary_Expr_Node.cpp
+	Calc_Node_Factory.cpp
+	Calculator.cpp
+	Close_Parentheses_Node.cpp
+	Divide_Expr_Node.cpp
+	driver.cpp
+	Eval_Expr_Tree_Visitor.cpp
+	Expr_Builder.cpp
+	Expr_Node.cpp
+	Expr_Node_Visitor.cpp
+	Expr_Tree_Builder.cpp
+	Modulus_Expr_Node.cpp
+	Multiply_Expr_Node.cpp
+	Node_Factory.cpp
+	Num_Expr_Node.cpp
+	Open_Parentheses_Node.cpp
+	Subtract_Expr_Node.cpp
+	Unary_Expr_Node.cpp
+  }
+
+  Template_Files {
+  Array.cpp
+  Stack.cpp
+  }
+}
